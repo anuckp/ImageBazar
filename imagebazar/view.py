@@ -1,4 +1,6 @@
 from django.http import HttpResponse
+from django.shortcuts import render
+
 
 def show_about_page(request):
-    return HttpResponse("hi this is about page")
+    return render(request,"about_us.html",{})
